@@ -208,4 +208,4 @@ def getInfo_id_range(startPage, endPage):
 #for i in range(1 , 10):
 #    getInfo_recipe_range((6880828 - i*100) , (6880828 - (i-1)*100) )
 
-getInfo_recipe_range( 6880550 , 6880650 )
+getInfo_recipe_range( 6879000 , 6880000 )
