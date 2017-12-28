@@ -96,6 +96,13 @@ def getInfo_recipe(id):
         result.append(str(id))
 
         try:
+            alert = driver.switch_to_alert()
+            alert.dismiss()
+            print("alert")
+        except:
+            print("")
+
+        try:
             lists = driver.find_element_by_id("contents_area")
         except:
             print("cannot find page")
@@ -205,7 +212,8 @@ def getInfo_id_range(startPage, endPage):
 #for i in range(19, 30):
 #   getInfo_id_range(i*100, (i+1)* 100)
 
-#for i in range(1 , 10):
-#    getInfo_recipe_range((6880828 - i*100) , (6880828 - (i-1)*100) )
+#for i in range(2 , 9):
+    #getInfo_recipe_range((6870000 + (i-1)*1000) , (6870000 + i*1000) )
 
-getInfo_recipe_range( 6879000 , 6880000 )
+
+getInfo_recipe_range( 6871672 , 6872000 )
